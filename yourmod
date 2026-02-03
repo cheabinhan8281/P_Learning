@@ -18,20 +18,5 @@ def calculator(num1:int|float, op:str, num2:int|float):
         case '-': return num1-num2
         case '*': return num1*num2
         case '/': return num1/num2
-        case _: return None
+        case _: return print("유효하지 않은 연산입니다.")
         
-def sum_avg(nums:list|tuple):
-    tot = sum(nums)          # nums의 값 합산
-    avg = tot/len(nums)
-    return tot, avg
-
-def week_day_from_num(n:str):
-    match n:
-        case '0': return '일요일'
-        case '1': return '월요일'
-        case '2': return '화요일'
-        case '3': return '수요일'
-        case '4': return '목요일'
-        case '5': return '금요일'
-        case '6': return '토요일'
-        case _: return None
