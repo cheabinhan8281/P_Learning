@@ -2,5 +2,7 @@ requests
 beautifulsoup4
 numpy
 pandas
+webdriver_manager
+selenium
 
 # pip install -r requirments.txt
